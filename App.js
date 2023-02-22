@@ -8,6 +8,7 @@ import Login from './Screens/Login';
 import SearchHospital from './Screens/SearchHospital';
 import DoctorList from './Screens/DoctorList';
 import Appointment from './Screens/Appoinment';
+import Emergency from './Screens/Emergency';
 
 
 const Stack = createStackNavigator();
@@ -25,6 +26,7 @@ const App = () => {
         <Stack.Screen name='SearchHospital' component={SearchHospital} options={{headerShown:false}}/>
         <Stack.Screen name='DoctorList' component={DoctorList} options={{headerShown:false}}/>
         <Stack.Screen name='Appointment' component={Appointment} options={{headerShown:false}}/>
+        <Stack.Screen name='Emergency' component={Emergency} options={{headerShown:false}}/>
        </Stack.Navigator>
     </NavigationContainer>
   );

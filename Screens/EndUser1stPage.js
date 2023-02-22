@@ -12,7 +12,7 @@ const EndUser1stPage=({navigation})=>{
         <Pressable onPress={()=>navigation.navigate('Login')}>
           <Text style={styles.buttons}>Login</Text>
         </Pressable>
-        <Pressable>
+        <Pressable onPress={()=>navigation.navigate('Emergency')}>
           <Text style={styles.buttons}>Emergency</Text>
         </Pressable>
       </View>

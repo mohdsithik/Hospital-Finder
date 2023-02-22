@@ -9,7 +9,7 @@ import {View, Text, StyleSheet, Image, Pressable} from 'react-native';
       <Pressable onPress={props.onPress}>
       <Image
         style={styles.DrawerIcon}
-        source={require('/home/divum/Assignment/HospitalFinder/Asserts/LeftArrow.png')}
+        source={require('../Asserts/LeftArrow.png')}
       />
       </Pressable >
       <Text style={styles.pageName}>{props.value}</Text>
@@ -17,7 +17,7 @@ import {View, Text, StyleSheet, Image, Pressable} from 'react-native';
         <Pressable >
         <Image
           style={styles.notificationIcon}
-          source={require('/home/divum/Assignment/HospitalFinder/Asserts/Notification.png')}
+          source={require('../Asserts/Notification.png')}
         />
         </Pressable>
       </View>

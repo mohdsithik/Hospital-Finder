@@ -67,7 +67,7 @@ const SignUp = ({navigation}) => {
 
   return (
    
-      <View>
+      <View style={{flex:1}}>
          
         <Navbar value={'SignUp'} onPress={()=> navigation.pop()} />
          <ScrollView> 
