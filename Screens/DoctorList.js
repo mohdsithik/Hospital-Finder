@@ -19,7 +19,7 @@ const DoctorList = ({route, navigation}) => {
 
   useEffect(() => {
     axios
-      .post('https://a5eb-2409-4072-6e09-7d64-245c-7ab2-fdcd-75ad.in.ngrok.io/getdoctors', {
+      .post('https://78c6-106-51-80-105.in.ngrok.io/getdoctors', {
         hospital_name: hospital_name,
       })
       .then(function (response) {

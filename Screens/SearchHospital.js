@@ -24,7 +24,7 @@ const SearchHospital = ({navigation}) => {
 
   const apiDtata = () => {
     axios
-      .get('https://a5eb-2409-4072-6e09-7d64-245c-7ab2-fdcd-75ad.in.ngrok.io/searchhospital')
+      .get('https://78c6-106-51-80-105.in.ngrok.io/searchhospital')
       .then(response => {
         setCardData(response.data), setFilterdData(response.data);
       });
@@ -46,7 +46,7 @@ const SearchHospital = ({navigation}) => {
         <View style={{color: 'blue', width: '40%'}}>
           <TouchableOpacity
             onPress={() => Linking.openURL(`tel:${item.contact}`)}>
-            <Text style={{color:'blue',marginLeft:10,}}>
+            <Text style={{color: 'blue', marginLeft: 10}}>
               {'+91 '}
               {item.contact}
             </Text>
@@ -110,23 +110,21 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: 'green',
   },
-  address:{
-    marginLeft:10,
-    color:'black',
-    padding:1
+  address: {
+    marginLeft: 10,
+    color: 'black',
+    padding: 1,
   },
-  addresstxt:{
-    color:'black',
-    fontSize:18
+  addresstxt: {
+    color: 'black',
+    fontSize: 18,
   },
-  searchBarNav:{
-     backgroundColor:'#C7CBD0',
-     width:'100%',
-     height:45,
-     borderRadius:20
-  }
-  
-
+  searchBarNav: {
+    backgroundColor: '#C7CBD0',
+    width: '100%',
+    height: 45,
+    borderRadius: 20,
+  },
 });
 
 export default SearchHospital;

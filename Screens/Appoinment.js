@@ -113,6 +113,7 @@ const styles = StyleSheet.create({
     borderColor: 'green',
     paddingLeft: 20,
     margin: 10,
+    color:'black'
   },
   dropdownlist: {
     borderRadius: 20,

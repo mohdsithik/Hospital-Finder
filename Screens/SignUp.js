@@ -11,6 +11,7 @@ import {
 import SelectList from 'react-native-dropdown-select-list';
 import { storeData,getData } from './Storage';
 import Navbar from './Navbar';
+import { color } from 'react-native-reanimated';
 
 const SignUp = ({navigation}) => {
   // const [selected, setSelected] = useState('');
@@ -31,6 +32,7 @@ const SignUp = ({navigation}) => {
     {key: 'Others', value: 'Others'},
   ];
   const diseases = [
+    {key: 'None', value: 'None'},
     {key: 'Malaria', value: 'Malaria'},
     {key: 'AIDS', value: 'AIDS'},
     {key: 'Colds and Flu', value: 'Colds and Flu'},
@@ -83,6 +85,9 @@ const SignUp = ({navigation}) => {
           data={data}
           search={false}
           boxStyles={styles.dropdownlist}
+          inputStyles={{color:'black'}}
+          dropdownTextStyles={{color:'black'}}
+        
         />
         <Text style={styles.lable}>Age</Text>
         <TextInput
@@ -97,6 +102,8 @@ const SignUp = ({navigation}) => {
           data={diseases}
           search={true}
           boxStyles={styles.dropdownlist}
+          inputStyles={{color:'black'}}
+          dropdownTextStyles={{color:'black'}}
         />
         <Text style={styles.lable}>Height</Text>
         <TextInput
@@ -137,16 +144,19 @@ const styles = StyleSheet.create({
     borderColor: 'green',
     paddingLeft: 20,
     margin: 10,
+    color:'black'
   },
   dropdownlist: {
     borderRadius: 20,
     borderColor: 'green',
     margin: 10,
+    color:'black'
   },
   lable: {
     margin: 4,
     color: 'black',
     marginLeft: 16,
+    // color:'black'
   },
   button: {
     padding: 10,
